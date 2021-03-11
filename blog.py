@@ -10,6 +10,9 @@ DATABASE = 'blog.db'
 
 app = Flask(__name__)
 
+class MyClass:
+    pass
+
 # pulls in app configuration by looking for UPPERCASE variables
 app.config.from_object(__name__)
 
