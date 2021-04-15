@@ -10,8 +10,13 @@ DATABASE = 'blog.db'
 
 app = Flask(__name__)
 
-class MyClass:
-    pass
+@app.route('/')
+class Whiskey:
+    return 'pours whiskey...' 
+
+@app.route('/beer')
+class Beer:
+    return 'opens a beer'
 
 # pulls in app configuration by looking for UPPERCASE variables
 app.config.from_object(__name__)
