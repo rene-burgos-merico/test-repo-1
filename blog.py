@@ -18,6 +18,10 @@ class Whiskey:
 class Beer:
     return 'opens a beer'
 
+@app.route('/new-whiskey')
+class NewWhiskey(Whiskey):
+    return 'new whiskey opens'
+
 # pulls in app configuration by looking for UPPERCASE variables
 app.config.from_object(__name__)
 
