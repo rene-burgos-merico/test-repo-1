@@ -22,6 +22,10 @@ class Beer:
 class NewWhiskey(Whiskey):
     return 'new whiskey opens'
 
+@app.route('/another-route')
+class SuperRoute:
+    return 'route goes here'
+
 # pulls in app configuration by looking for UPPERCASE variables
 app.config.from_object(__name__)
 
